@@ -38,11 +38,7 @@ osascript RemindersToCSV.applescript "My List Name"
 
 ### From Apple Shortcuts
 
-Set up a shortcut with these actions:
-
-1. **Choose from List** -- present your reminder list names plus "All Lists"
-2. **Text** -- pass the chosen value as text
-3. **Run AppleScript** -- paste the script contents; the chosen list name flows in as input
+[Setup the Shortcut](https://www.icloud.com/shortcuts/db790b2362114b1e983b436d0268117f)
 
 The script detects it was called from Shortcuts and runs silently (no dialogs). It returns the output file path, which you can pass to subsequent actions like **Quick Look** or **Show Notification**.
 
