@@ -38,7 +38,6 @@ osascript RemindersToCSV.applescript "My List Name"
 
 ### From Apple Shortcuts
 
-[Setup the Shortcut](https://www.icloud.com/shortcuts/db790b2362114b1e983b436d0268117f)
 
 The script detects it was called from Shortcuts and runs silently (no dialogs). It returns the output file path, which you can pass to subsequent actions like **Quick Look** or **Show Notification**.
 
