@@ -42,7 +42,3 @@ osascript RemindersToCSV.applescript "My List Name"
 The script detects it was called from Shortcuts and runs silently (no dialogs). It returns the output file path, which you can pass to subsequent actions like **Quick Look** or **Show Notification**.
 
 When no input is provided (Script Editor, direct run), it defaults to exporting all lists and shows a completion dialog.
-
-## Performance
-
-Uses bulk property fetching (`name of every reminder of aList`) to pull all values per property in a single Apple Event call, rather than querying each reminder individually. This reduces IPC overhead from ~8N calls to ~8 calls per list.
